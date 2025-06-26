@@ -1,17 +1,47 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<h1>Mi sitio Astro</h1>
-	</body>
-</html>
+<Layout>
+  <!-- HERO MEJORADO -->
+  <section class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-800 text-white overflow-hidden">
+    
+    <!-- Fondo decorativo SVG -->
+    <svg class="absolute top-0 left-0 w-80 opacity-20" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#ffffff" d="M39.4,-67.7C50.1,-58.9,58.5,-50,66.5,-38.8C74.4,-27.6,81.8,-13.8,82.5,0.2C83.2,14.2,77.2,28.4,68.2,41.3C59.1,54.3,47,66,33.2,70.7C19.3,75.3,3.6,72.9,-11.6,70.5C-26.7,68.1,-41.3,65.8,-53.4,58.4C-65.5,51.1,-75,38.6,-77.7,25.2C-80.4,11.9,-76.3,-2.3,-71.5,-16.7C-66.6,-31.2,-61,-45.8,-50.4,-55.9C-39.7,-66,-24.8,-71.6,-9.1,-66.7C6.5,-61.8,13,-46.5,39.4,-67.7Z" transform="translate(100 100)" />
+    </svg>
+
+    <!-- Imagen de perfil (Avatar) -->
+    <img src="https://scontent.floh1-1.fna.fbcdn.net/v/t39.30808-6/472229071_9044016262312401_6374710854389938061_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGlhDDarEEv6fGNfVdaNNlmad2Wa0036D9p3ZZrTTfoP-jzCVDRIY0wTj2mtfU2j7wkMUAkjn1nEhs2izl09_eT&_nc_ohc=GzI3jK1H-_AQ7kNvwFD3cBj&_nc_oc=AdmbvRR2iw4mBb6bDh_R7gH_eGFwv69d47HXDJcTyF-Zg6mhe0o_p3ZWEUAGauVZPPu72iUeJvqNJa1ouTAgpn1q&_nc_zt=23&_nc_ht=scontent.floh1-1.fna&_nc_gid=4QIOMkJF_-o5KlK6jqDmJw&oh=00_AfOV40zV3tat6VR2xHU4I9h_t-kEh9Azn8HPJP9GIuWtyA&oe=6862E8FF" alt="Foto de perfil" class="w-40 h-40 rounded-full border-4 border-white shadow-lg z-10 mb-6" data-aos="zoom-in" />
+
+    <!-- Texto principal -->
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-4 z-10 drop-shadow-lg" data-aos="fade-up">
+      ¡Hola! Soy Joel
+    </h1>
+    <p class="text-lg md:text-2xl max-w-2xl mb-6 text-white/90 z-10" data-aos="fade-up" data-aos-delay="200">
+      Desarrollador FrontEnd y Backend, apasionado por el diseño web moderno, animaciones y la experiencia de usuario.
+    </p>
+
+    <!-- Botón -->
+    <a href="#proyectos" class="z-10 px-8 py-4 bg-white text-indigo-800 font-bold rounded-xl shadow-lg hover:scale-105 transition transform duration-300" data-aos="fade-up" data-aos-delay="400">
+      Ver mis proyectos
+    </a>
+
+    <!-- Iconos sociales -->
+    <div class="flex gap-6 mt-8 z-10" data-aos="fade-up" data-aos-delay="600">
+      <a href="https://github.com" target="_blank" class="hover:scale-110 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-8 h-8 invert" />
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="hover:scale-110 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-8 h-8 invert" />
+      </a>
+      <a href="mailto:juan@email.com" class="hover:scale-110 transition">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Proyectos / Testimonios / Contacto siguen igual -->
+</Layout>
